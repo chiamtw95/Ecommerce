@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: aliceblue;
+}
+header{
+    text-align: center;
+    padding-left: 200px;
+    height: 20%;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+nav{
+    margin-top: 25px;
+    float: left;
+    position: fixed;
+    display: block;
+    width: 200px;
+    height:864px;
+}
+nav a{
+    text-align: center;
+    font-size: 2em;
+    display: block;
+    padding: 20px 0px;
+}
+nav a:nth-child(1){
+    margin-top: 20px;
+}
+main{
+    float: right;
+    margin-left: 200px;
+}
+.intro{
+    text-align: center;
+    flex-direction: column;
+}
+.intro h1{
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+.intro p{
+    margin-top: 0;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+.intro h2{
+    margin-top: 0;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+main div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.center{
+    text-align: center;
+    flex-direction: column;
+}
+
+main div img{
+    width: 400px;
+    display: inline-block;
+
+}
+
+footer{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-top: auto;
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 20px;
+}
+footer h2 {
+    margin-bottom: 0;
+}
+footer p ,ul{
+    margin: 0;
+    padding-left: 0;
+}
+footer ul li{
+    display: inline-block;
+}
+
+.product-wrapper{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.product-wrapper img{
+    width: 200px;
+}
+.product-wrapper figure{
+    flex-direction: row;
+}
+
+figcaption h4,p{
+    margin:0 ;
+}
+
+.rating {
+    justify-content: flex-start;
+}
+.enquiry{
+    border: solid black;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.form-container{
+    margin-left: 150px ;
+}
+.enquiry div{
+    width: 100%;
+    flex-direction: column;
+}
+
+#enquiry label{
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.enquiry input[type=text], .enquiry input[type=email], .enquiry textarea{
+    width: 100%;
+    display: inline-block;
+}
+
+.enquiry input[type=submit]{
+    display: inline;
+    width: 120px;
+
+}
