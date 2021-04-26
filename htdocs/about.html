@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="cartNumber.js"></script>
     <title>Brand Name Here </title>
 </head>
 
@@ -13,34 +15,37 @@
     </header>
 
     <nav>
-        Brand Logo here
+        <span class="brandname">Brand name here</span>
         <a href="payment.html">Cart</a>
         <a href="index.html">Home</a>
         <a href="product.html">Products</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About us</a>
     </nav>
-   
+
     <main class="index">
-        
+
         <div class="intro">
-            <h1>Cart</h1>
-            <p></p>
+            <h1>Brand Name here</h1><br>
+            <h2>About us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias cupiditate quisquam provident, quo
+                similique consequuntur commodi! Velit, ipsam? Officia voluptatum alias quos nam eius consequatur fuga
+                cum? Quidem, autem temporibus!</p>
         </div>
 
-       
+        <div class="center">
+            <a href="product.html">
+                <h1>Explore our products now</h1>
+            </a>
+        </div>
 
-
-
-
-        
-        <footer>     
-             <h2>Stay updated</h2>
+        <footer>
+            <h2>Stay updated</h2>
             <p>Subscribe to our newsletter for promotions, new products and sales. <br> Directly to your inbox.</p>
-            <form action="phpfiles/newsletter/insert_email_newsletter.php" method="post">
-            <label for=""></label>
-            <input type="email" name="email" placeholder="Your email here" id="email">
-            <input type="submit">
+            <form action="phpfiles/newsletter_insert.php" method="post">
+                <label for=""></label>
+                <input type="email" name="email" placeholder="Your email here" id="email">
+                <input type="submit">
             </form>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -51,43 +56,5 @@
         </footer>
 
     </main>
-    
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>

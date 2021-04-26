@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="quantity.js" async></script>
+    <title>Brand Name Here </title>
+</head>
+
+<body>
+    <header>
+        Enjoy free shipping for any orders of RM50 and above!
+    </header>
+
+    <nav>
+        <span class="brandname">Brand name here</span>
+        <a href="payment.html">Cart</a>
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About us</a>
+    </nav>
+
+    <main class="index">
+
+        <div class="intro">
+            <h1>Orders</h1>
+            <p></p>
+        </div>
+
+        <div class="form-container">
+            <form class="cart" action="phpfiles/order_insert.php" method="POST">
+                <div>
+                    <label for="fullname">Fullname: </label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Your name here">
+
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Your email here">
+
+                    <label for="address">Address: </label>
+                    <input type="alphanumeric" name="address" id="address" placeholder="Address">
+
+                    <label for="postcode">Postcode: </label>
+                    <input type="number" name="postcode" id="postcode" placeholder="Postcode">
+
+                    <label for="city">City: </label>
+                    <input type="text" name="city" id="city" placeholder="City">
+
+                    <label>Item to be purchased: </label>
+                    <select name="item" id="item">
+                        <option class="assorted" value="assorted">Assorted soap bars of 8</option>
+                        <option class="pink" value="pink">Pink</option>
+                        <option class="blue" value="blue">Blue</option>
+                        <option class="set" value="set">Wellness set</option>
+                    </select>
+                    <input type="number" name="itemQuantity" id="itemQuantity" placeholder="Qty">
+
+                    <input id="confirmorder" type="submit" value="Confirm details and place order">
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <h2>Stay updated</h2>
+            <p>Subscribe to our newsletter for promotions, new products and sales. <br> Directly to your inbox.</p>
+            <form action="phpfiles/newsletter_insert.php" method="post">
+                <label for=""></label>
+                <input type="email" name="email" placeholder="Your email here" id="email">
+                <input type="submit">
+            </form>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+
+</html>
+

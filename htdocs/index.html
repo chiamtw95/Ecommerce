@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="cartNumber.js"></script>
     <title>Brand Name Here </title>
 </head>
 
@@ -13,16 +14,16 @@
     </header>
 
     <nav>
-        Brand Logo here
+        <span class="brandname">Brand name here</span>
         <a href="payment.html">Cart</a>
         <a href="index.html">Home</a>
         <a href="product.html">Products</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About us</a>
     </nav>
-   
+
     <main class="index">
-        
+
         <div class="intro">
             <h1>Brand Name here</h1>
             <p>Our soap bars are hand-made using all-natural, high-quality, plant-based ingredients which are ethically sourced and produced
@@ -42,11 +43,11 @@
 
 
 
-        
-        <footer>     
+
+        <footer>
              <h2>Stay updated</h2>
             <p>Subscribe to our newsletter for promotions, new products and sales. <br> Directly to your inbox.</p>
-            <form action="phpfiles/newsletter/insert_email_newsletter.php" method="post">
+            <form action="phpfiles/newsletter_insert.php" method="post">
             <label for=""></label>
             <input type="email" name="email" placeholder="Your email here" id="email">
             <input type="submit">
@@ -60,10 +61,10 @@
         </footer>
 
     </main>
-    
-    
 
-    
+
+
+
 
 
 

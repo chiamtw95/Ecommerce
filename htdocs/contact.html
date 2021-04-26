@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="cartNumber.js"></script>
     <title>Brand Name Here </title>
 </head>
 
@@ -13,46 +14,46 @@
     </header>
 
     <nav>
-        Brand Logo here
+        <span class="brandname">Brand name here</span>
         <a href="payment.html">Cart</a>
         <a href="index.html">Home</a>
         <a href="product.html">Products</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About us</a>
     </nav>
-   
+
     <main class="index">
-        
+
         <div class="intro">
             <h1>Contact us!</h1>
             <p>If you have any enquiries, please fill in the form below and our team will get in touch with you. </p>
         </div>
 
         <div class="form-container">
-            <form class="enquiry" action="form.php" method="POST">
+            <form class="enquiry" action="phpfiles/enquiry_insert.php" method="POST">
                 <div>
                     <label for="fullname">Fullname: </label>
                     <input type="text" name="fullname" id="fullname"><br>
-    
+
                     <label for="email">Email: </label>
                     <input type="email" name="email" id="email"><br>
-    
-                    <label for="msg">Your enquiry: </label> 
+
+                    <label for="msg">Your enquiry: </label>
                     <textarea rows="20" name="msg" id="msg"></textarea> <br>
-    
+
                     <input type="submit" value="Submit enquiry">
                 </div>
             </form>
         </div>
-        
 
 
 
-        
-        <footer>     
+
+
+        <footer>
              <h2>Stay updated</h2>
             <p>Subscribe to our newsletter for promotions, new products and sales. <br> Directly to your inbox.</p>
-            <form action="phpfiles/newsletter/insert_email_newsletter.php" method="post">
+            <form action="phpfiles/newsletter_insert.php" method="post">
             <label for=""></label>
             <input type="email" name="email" placeholder="Your email here" id="email">
             <input type="submit">
@@ -66,10 +67,10 @@
         </footer>
 
     </main>
-    
-    
 
-    
+
+
+
 
 
 
